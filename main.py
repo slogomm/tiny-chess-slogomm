@@ -1,6 +1,6 @@
 import json,os,sys,urllib.error,urllib.request as u
 U=os.environ.get("MAKEFUN_ENV_URL")or sys.exit("MAKEFUN_ENV_URL is not set")
-V=[0,100,320,330,500,900,0]
+V=[0,100,320,330,500,920,0]
 I=100000
 def R(p,b):
  r=u.Request(U+p,json.dumps(b).encode(),{"content-type":"application/json"})
@@ -136,7 +136,7 @@ def C(f,l):
   n[f]=0;n[t]=p+1+u*6 if p else P
   C&=15;Ee=-1;S^=1
   if A(n,Kk[S],S):continue
-  v=-Z(n,S,C,Ee,Kk,3,-I,I)
+  v=-Z(n,S,C,Ee,Kk,4,-I,I)
   if v>bS:bS=v;B=u
  return B
 while 1:
